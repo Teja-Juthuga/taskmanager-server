@@ -13,11 +13,13 @@ app.use(express.urlencoded({ extended: true }));
 
 const test = require("./routes/test.route");
 const createNewTask = require("./routes/createTask.route");
-const getTasks = require("./routes/getTasks.route");
+const getALLTasks = require("./routes/getAllTasks.route");
+const getTask = require("./routes/getTask.route");
 
 
 app.use("/tasks", createNewTask);
-app.use("/tasks", getTasks);
+app.use("/tasks", getALLTasks);
+app.use("/tasks", getTask);
 app.use("/Test", test);
 
 
