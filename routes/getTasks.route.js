@@ -3,8 +3,8 @@ const router = express.Router();
 const pool = require("../database/connectDB");
 
 router.get("/", (req, res) => {
-    /*
-    pool.query(`SELECT * FROM Users`, (err, results) => {
+    
+    pool.query(`SELECT * FROM Tasks`, (err, results) => {
         if (err){
             console.log('Error: ' + err);
             res.status(500).send('Error fetching data from database');
@@ -13,7 +13,6 @@ router.get("/", (req, res) => {
         }
     })
     
-    */
 });
 
 module.exports = router;
