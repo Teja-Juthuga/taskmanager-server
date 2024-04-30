@@ -1,0 +1,14 @@
+{
+  "name": "taskmanager-server",
+  "version": "1.0.0",
+  "description": "This Server containes api's of crud opertions in Task Manager Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Teja Juthuga",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
