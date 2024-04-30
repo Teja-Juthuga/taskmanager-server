@@ -42,3 +42,14 @@ router.post("/", async (req, res) => {
 });
 
 module.exports = router;
+/*
+{
+    "title": "EpiMax Backend Assignment", 
+    "description": "Complete backend task at any cost by today night 11:30 PM",
+    "status" : "Completed", 
+    "assignee_id" : 1, 
+    "created_at" : "4/30/2024", 
+    "updated_at" : "4/30/2024"
+}
+
+*/
