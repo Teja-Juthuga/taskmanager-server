@@ -28,8 +28,8 @@ router.post("/", authenticateToken,async (req, res) => {
             '${description}',
             '${status}', 
             ${assignee_id}, 
-            ${created_at}, 
-            ${updated_at}
+            '${created_at}', 
+            '${updated_at}'
         )
     `
     pool.query(addTaskQuery, (err, result)=>{
