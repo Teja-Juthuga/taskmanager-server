@@ -1,8 +1,12 @@
 const express = require("express");
 const router = express.Router();
+
+const jwt = require("jsonwebtoken");
+const authenticateToken = require("../middleware");
+
 const pool = require("../database/connectDB");
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", authenticateToken, async (req, res) => {
     if (!req.body) {
         return res.status(400).json({ error: 'Task details are missing in the request body' });
     }

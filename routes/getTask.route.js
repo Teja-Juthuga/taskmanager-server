@@ -1,8 +1,12 @@
 const express = require("express");
 const router = express.Router();
+
+const jwt = require("jsonwebtoken");
+const authenticateToken = require("../middleware");
+
 const pool = require("../database/connectDB");
 
-router.get("/:id", (req, res) => {
+router.get("/:id", authenticateToken,(req, res) => {
     // console.log(req.params.id)
     const taskId  = req.params.id;   
     const getTaskQuery = `

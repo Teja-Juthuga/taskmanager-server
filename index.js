@@ -30,4 +30,6 @@ app.use("/login", loginUser);
 app.use("/test", test);
 
 
-app.listen(3001, ()=> console.log("server is running at port 3001"));
+app.listen(3001, ()=> {
+    console.log("server is running at port:3001")
+});
